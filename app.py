@@ -3,23 +3,17 @@ import pandas as pd
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
-# Load dataset
 movies = pd.read_csv("tmdb_5000_movies.csv")
 
-# Create text field
 movies["text"] = movies["overview"].fillna("") + " " + movies["genres"].fillna("")
 
-# Load embedding model
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Create embeddings
 embeddings = model.encode(movies["text"].tolist())
 
-# Similarity matrix
 similarity_matrix = cosine_similarity(embeddings)
 
 
-# Recommendation function
 def recommend_with_explanation(movie_title, top_n=5):
 
     if movie_title not in movies["title"].values:
@@ -34,6 +28,8 @@ def recommend_with_explanation(movie_title, top_n=5):
 
     for i in scores[1:top_n+1]:
         movie = movies.iloc[i[0]]
+
+    
 
         explanation = f"Recommended because it shares similar genres ({movie['genres']}) with {movie_title}."
 
