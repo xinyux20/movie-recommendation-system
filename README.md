@@ -14,32 +14,32 @@ Make sure the dataset file is in the project folder before running the app.
 
 ## Example 1
 
-Input movie:
-Avatar
+Input movie: Avatar
 
 Recommended movies:
-• Serenity
-• Aliens
-• Gattaca
-• Star Trek Beyond
-• Independence Daysaster
+- Serenity
+- Aliens
+- Gattaca
+- Star Trek Beyond
+- Independence Daysaster
 
 ## Example 2
 
-User preference:
-space sci-fi movies
+User preference: space sci-fi movies
 
 Recommended movies:
-• Interstellar
-• The Martian
-• Gravity
-• Sunshine
-• Passengers
+- Interstellar
+- The Martian
+- Gravity
+- Sunshine
+- Passengers
 
 ## Run the application
 
 1. Install dependencies
+
 pip install -r requirements.txt
 
 2. Run the Streamlit app
+
 streamlit run app.py
