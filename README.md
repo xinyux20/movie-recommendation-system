@@ -17,22 +17,22 @@ Make sure the dataset file is in the project folder before running the app.
 Input movie: Avatar
 
 Recommended movies:
-- Serenity
-- Aliens
-- Gattaca
-- Star Trek Beyond
-- Independence Daysaster
+- Titan A.E.
+- 20,000 Leagues Under the Sea
+- The Abyss
+- The Finest Hours
+- Saving Private Ryan
 
 ## Example 2
 
 User preference: space sci-fi movies
 
 Recommended movies:
-- Interstellar
-- The Martian
-- Gravity
-- Sunshine
-- Passengers
+- Wing Commander
+- My Big Fat Independent Movie
+- Galaxy Quest
+- The Ghastly Love of Johnny X
+- You Only Live Twice
 
 ## Run the application
 
